@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Apex</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    @font-face {
+        font-family: 'myFirstFont';
+        src: url('font/nulshockbd.ttf');
+    }
+    
+    html {
+        font-family: 'myFirstFont' !important;
+    }
+    
+    h1 {
+        font-size: 3vh !important;
+    }
+    
+    h2 {
+        font-size: 2vh !important;
+    }
+    
+    span {
+        font-size: 1.3vh;
+    }
+    
+    .main-page {
+        background-image: url('image/bg-home.jpg');
+        background-position: center;
+        height: 105vh;
+    }
+    
+    .roadmap-page-1 {
+        background-image: url('image/bg-roadmap.png');
+        background-position: bottom;
+    }
+    
+    .roadmap-page-2 {
+        background-image: url('image/bg-roadmap.png');
+        background-position: bottom;
+    }
+    
+    .footer-page {
+        background-image: url('image/bg-footer.png');
+        height: 70vh;
+        background-position: bottom -84px right;
+    }
+    
+    .back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 0px;
+        left: 0px;
+        z-index: 99;
+    }
+</style>
+<script>
+    function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+<body>
+    <div>
+        <span class="back-to-top text-center bg-danger">
+            <span class="bg-[#FFFFFF80] text-[30px] text-white cursor-pointer rounded-full p-1" onclick="backToTop()">
+                <i class="fa fa-angle-up text-[4vh] mx-2"></i>
+            </span>
+        </span>
+        <div class="main-page">
+            <div class="grid lg:grid-cols-3 grid-cols-1 px-4">
+                <div class="lg:col-span-2"> <img class="lg:mx-0 mx-auto" src="image/logo-header.png"></div>
+                <div class="grid grid-cols-2 gap-4 lg:mt-10 mt-2">
+                    <a href="https://www.facebook.com/"> <img src="image/btn-document.png" class="cursor-pointer"></a>
+                    <a href="dashboard.html"> <img src="image/btn-app.png" class="cursor-pointer"></a>
+                </div>
+            </div>
+            <div class="grid lg:grid-cols-2 grid-cols-1 lg:mt-5 mt-3 text-white">
+                <div class="p-5">
+                    <div class="text-center">
+                        <h1>
+                            INNOVATIVE
+                        </h1>
+                        <h1>
+                            EVOLUTION IN
+                        </h1>
+                        <h1>
+                            DECENTRALIZED
+                        </h1>
+                        <h1>
+                            FINANCE
+                        </h1>
+                        <h1>
+                            BEGINS WITH
+                        </h1>
+                        <h1>
+                            100,152% APY
+                        </h1>
+                    </div>
+                    <div class="text-center p-5 bg-[#102027BF] rounded-md lg:mt-16 mt-10">
+                        <div class="-mt-2">
+                            <h1>PRE-SALE BEGINS IN :</h1>
+                        </div>
+                        <div class="px-5">
+                            <div class="grid grid-cols-4 lg:gap-10 gap-3 mt-2">
+                                <div class="grid grid-row-2">
+                                    <div class="bg-[#102027BF] rounded-md">
+                                        <h2 class="py-2">15</h2>
+                                    </div>
+                                    <div>
+                                        <span>DAYS</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-row-2">
+                                    <div class="bg-[#102027BF] rounded-md">
+                                        <h2 class="py-2">24</h2>
+                                    </div>
+                                    <div>
+                                        <span>HOURS</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-row-2">
+                                    <div class="bg-[#102027BF] rounded-md">
+                                        <h2 class="py-2">24</h2>
+                                    </div>
+                                    <div>
+                                        <span>MINUTE</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-row-2">
+                                    <div class="bg-[#102027BF] rounded-md">
+                                        <h2 class="py-2">24</h2>
+                                    </div>
+                                    <div>
+                                        <span>SECOND</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="https://www.facebook.com/">
+                                <div class="mt-3 border-2 rounded-md border-[#7DCFD4] cursor-pointer">
+                                    <h2>HOW TO REGISTER <br>FOR WHITELIST</h2>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="roadmap-page-1">
+            <div class="flex">
+                <img src="image/roadmap1.png" width="100%" class="mt-10">
+            </div>
+        </div>
+        <div class="roadmap-page-2">
+            <div class="flex">
+                <img src="image/roadmap2.png" width="100%" class="mt-20">
+            </div>
+        </div>
+        <div class="flex text-center footer-page">
+            <div class="grid grid-row-3 gap-5 m-auto text-white">
+                <div class="flex">
+                    <img src="image/logo.png" width="30%" class="mx-auto">
+                </div>
+                <div>
+                    <h1>APEX'S SOCAIAL</h1>
+                </div>
+                <div class="mx-auto">
+                    <div>
+                        <a href="https://www.facebook.com/"><i class="fab fa-twitter text-[4vh] mx-5"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fab fa-telegram text-[4vh] mx-5"></i></a>
+                        <a href="https://www.facebook.com/"> <i class="fab fa-discord text-[4vh] mx-5"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

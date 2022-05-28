@@ -21,37 +21,46 @@
     }
     
     h1 {
-        font-size: 3vh !important;
+        font-size: 5vh !important;
     }
     
     h2 {
-        font-size: 2vh !important;
+        font-size: 2.5vh !important;
     }
     
     span {
-        font-size: 1.3vh;
+        font-size: 1vh;
     }
     
     .main-page {
         background-image: url('image/bg-home.jpg');
-        background-position: center;
-        height: 105vh;
+        background-position: top;
+        background-size: cover;
+        background-repeat: round;
+        height: 100vh;
     }
     
     .roadmap-page-1 {
         background-image: url('image/bg-roadmap.png');
-        background-position: bottom;
+        background-position: top;
+        background-size: cover;
+        background-repeat: round;
+        height: 100vh;
     }
     
     .roadmap-page-2 {
         background-image: url('image/bg-roadmap.png');
-        background-position: bottom;
+        background-position: top;
+        background-size: cover;
+        background-repeat: round;
+        height: 100vh;
     }
     
     .footer-page {
         background-image: url('image/bg-footer.png');
-        height: 70vh;
-        background-position: bottom -84px right;
+        background-position: bottom;
+        background-size: cover;
+        height: 100vh;
     }
     
     .back-to-top {
@@ -60,6 +69,40 @@
         right: 0px;
         left: 0px;
         z-index: 99;
+    }
+    
+    .btn-app {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .btn-app .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    
+    .btn-app:hover .img-top {
+        display: inline;
+    }
+    
+    .btn-doc {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .btn-doc .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    
+    .btn-doc:hover .img-top {
+        display: inline;
     }
 </style>
 <script>
@@ -77,15 +120,25 @@
             </span>
         </span>
         <div class="main-page">
-            <div class="grid lg:grid-cols-3 grid-cols-1 px-4">
-                <div class="lg:col-span-2"> <img class="lg:mx-0 mx-auto" src="image/logo-header.png"></div>
-                <div class="grid grid-cols-2 gap-4 lg:mt-10 mt-2">
-                    <a href="https://www.facebook.com/"> <img src="image/btn-document.png" class="cursor-pointer"></a>
-                    <a href="dashboard.html"> <img src="image/btn-app.png" class="cursor-pointer"></a>
+            <div class="grid lg:grid-cols-4 grid-cols-1 px-4">
+                <div class="lg:col-span-3"> <img class="h-36" src="image/logo-header.png"></div>
+                <div class="grid grid-cols-2 flex -mt-10">
+                    <a href="https://www.facebook.com/">
+                        <div class="btn-app">
+                            <img src="image/btn/enter-app.png" class="h-52">
+                            <img src="image/btn/enter-app-hover.png" class="img-top h-52">
+                        </div>
+                    </a>
+                    <a href="dashboard.html">
+                        <div class="btn-doc">
+                            <img src="image/btn/doc.png" class="h-52">
+                            <img src="image/btn/doc-hover.png" class="img-top h-52">
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="grid lg:grid-cols-2 grid-cols-1 lg:mt-5 mt-3 text-white">
-                <div class="p-5">
+            <div class="grid lg:grid-cols-2 grid-cols-1 mt-12  text-white">
+                <div class="px-5">
                     <div class="text-center">
                         <h1>
                             INNOVATIVE
@@ -99,14 +152,14 @@
                         <h1>
                             FINANCE
                         </h1>
-                        <h1>
-                            BEGINS WITH
-                        </h1>
-                        <h1>
-                            100,152% APY
-                        </h1>
+                        <h2>
+                            BEGINS WITH 100,152% APY
+                        </h2>
+                        <h2>
+                            Mutual fund dynamics
+                        </h2>
                     </div>
-                    <div class="text-center p-5 bg-[#102027BF] rounded-md lg:mt-16 mt-10">
+                    <div class="text-center p-5 bg-[#102027BF] rounded-md lg:mt-14">
                         <div class="-mt-2">
                             <h1>PRE-SALE BEGINS IN :</h1>
                         </div>
@@ -156,23 +209,19 @@
                 </div>
             </div>
         </div>
-        <div class="roadmap-page-1">
-            <div class="flex">
-                <img src="image/roadmap1.png" width="100%" class="mt-10">
-            </div>
+        <div class="roadmap-page-1 flex">
+            <img src="image/roadmap1.png" width="60%" class="m-auto">
         </div>
-        <div class="roadmap-page-2">
-            <div class="flex">
-                <img src="image/roadmap2.png" width="100%" class="mt-20">
-            </div>
+        <div class="roadmap-page-2 flex">
+            <img src="image/roadmap2.png" width="60%" class="m-auto">
         </div>
         <div class="flex text-center footer-page">
             <div class="grid grid-row-3 gap-5 m-auto text-white">
                 <div class="flex">
-                    <img src="image/logo.png" width="30%" class="mx-auto">
+                    <img src="image/logo.png" width="20%" class="mx-auto">
                 </div>
                 <div>
-                    <h1>APEX'S SOCAIAL</h1>
+                    <h2>APEX'S SOCAIAL</h2>
                 </div>
                 <div class="mx-auto">
                     <div>

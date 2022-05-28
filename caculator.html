@@ -31,7 +31,7 @@
     input[type="range"] {
         -webkit-appearance: none;
         margin-right: 15px;
-        width: 100vh;
+        width: 100%;
         height: 1.5vh;
         background: #273737;
         border-radius: 5px;
@@ -151,63 +151,63 @@
                             <a href="caculator.html" class="block py-2 pr-4 pl-3 text-white bg-[#7DCFD4] md:bg-transparent md:text-[#7DCFD4] md:p-0 dark:text-white" aria-current="page">CALCULATOR</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 pr-4 pl-3 text-danger border-b  border-danger-100 md:bg-transparent hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-[#7DCFD4]  dark:hover:bg-[#7DCFD4]  dark:hover:border-[#7DCFD4] dark:hover:text-white md:dark:hover:bg-transparent dark:bg-gray-700 dark:border-gray-700">SWAP</a>
+                            <a href="#" class="block py-2 pr-4 pl-3 text-danger border-b  border-danger-100 md:bg-transparent hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-[#7DCFD4]  dark:hover:bg-[#7DCFD4]  dark:hover:border-[#7DCFD4] dark:hover:text-white md:dark:hover:bg-transparent dark:bg-gray-700 dark:border-gray-700 dark:border-2">SWAP</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 pr-4 pl-3 text-danger border-b  border-danger-100 md:bg-transparent hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-[#7DCFD4]  dark:hover:bg-[#7DCFD4]  dark:hover:border-[#7DCFD4] dark:hover:text-white md:dark:hover:bg-transparent dark:bg-gray-700 dark:border-gray-700">GAME</a>
+                            <a href="#" class="block py-2 pr-4 pl-3 text-danger border-b  border-danger-100 md:bg-transparent hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-[#7DCFD4]  dark:hover:bg-[#7DCFD4]  dark:hover:border-[#7DCFD4] dark:hover:text-white md:dark:hover:bg-transparent dark:bg-gray-700 dark:border-gray-700 dark:border-2">GAME</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 pr-4 pl-3 text-danger border-b  border-danger-100 md:bg-transparent hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-[#7DCFD4]  dark:hover:bg-[#7DCFD4]  dark:hover:border-[#7DCFD4] dark:hover:text-white md:dark:hover:bg-transparent dark:bg-gray-700 dark:border-gray-700">DOCS</a>
+                            <a href="#" class="block py-2 pr-4 pl-3 text-danger border-b  border-danger-100 md:bg-transparent hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-[#7DCFD4]  dark:hover:bg-[#7DCFD4]  dark:hover:border-[#7DCFD4] dark:hover:text-white md:dark:hover:bg-transparent dark:bg-gray-700 dark:border-gray-700 dark:border-2">DOCS</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="flex">
-            <div class="w-3/4  mx-auto border border-[#7DCFD4] border-4 rounded-md px-4">
-                <div class="grid grid-cols-3 mt-4">
+        <div class="flex mt-10">
+            <div class="w-3/4 mx-auto border border-[#7DCFD4] border-4 rounded-md px-4">
+                <div class="grid grid-cols-3 mt-6">
                     <div class="flex text-white md:col-span-1 col-span-3">
                         <h2 class="m-auto">AFX TOKENS</h2>
                     </div>
                     <div class="md:col-span-2 col-span-3">
-                        <input inputmode="decimal" type="number" id="small-input" class="block w-full p-2 border-[#7DCFD4] rounded-md  sm:text-xs text-right">
+                        <input inputmode="decimal" type="number" id="small-input" class="block w-full p-2 border-[#7DCFD4] rounded-md  sm:text-xs text-right" placeholder="1,000.00">
                     </div>
                 </div>
-                <div class="grid grid-cols-3 mt-3">
+                <div class="grid grid-cols-3 mt-6">
                     <div class="flex text-white md:col-span-1 col-span-3">
                         <h2 class="m-auto">BUY PRICE</h2>
                     </div>
                     <div class="md:col-span-2 col-span-3">
-                        <input type="number" id="small-input" class="block w-full p-2 border-[#7DCFD4]   rounded-md  sm:text-xs text-right">
+                        <input type="number" id="small-input" class="block w-full p-2 border-[#7DCFD4]   rounded-md  sm:text-xs text-right" placeholder="1,000.00">
                     </div>
                 </div>
-                <div class="grid grid-cols-3 gap-5 mt-3 mb-4">
+                <div class="grid grid-cols-3 gap-5 mt-6 mb-6">
                     <div class="grid grid-row-2 md:col-span-1 col-span-3">
-                        <div class="grid md:grid-rows-2 grid-row-1 grid-flow-col  text-white">
+                        <div class="grid md:grid-rows-2 grid-row-1 grid-flow-col text-white mb-3">
                             <div class="md:text-center text-right">FUTURE</div>
                             <div class="md:text-center text-left">AFX TOKEN</div>
                         </div>
                         <div>
-                            <input type="number" step=0.01 id="small-input" class="block w-full p-2 border-[#7DCFD4]   rounded-md  sm:text-xs text-right">
+                            <input type="number" step=0.01 id="small-input" class="block w-full p-2 border-[#7DCFD4] mt-2  rounded-md  sm:text-xs text-right" placeholder="1,000.00">
                         </div>
                     </div>
                     <div class="grid grid-row-2 md:col-span-1 col-span-3">
-                        <div class="grid md:grid-rows-2 grid-row-1 grid-flow-col  text-white">
+                        <div class="grid md:grid-rows-2 grid-row-1 grid-flow-col text-white mb-3">
                             <div class="md:text-center text-right">FUTURE</div>
                             <div class="md:text-center text-left">PRICE</div>
                         </div>
                         <div>
-                            <input type="number" id="small-input" class="block w-full p-2  rounded-md  sm:text-xs text-right">
+                            <input type="number" id="small-input" class="block w-full p-2  rounded-md mt-2   sm:text-xs text-right" placeholder="1,000.00">
                         </div>
                     </div>
                     <div class="grid grid-row-2 md:col-span-1 col-span-3">
-                        <div class="grid md:grid-rows-2 grid-row-1 grid-flow-col  text-white">
+                        <div class="grid md:grid-rows-2 grid-row-1 grid-flow-col text-white mb-3">
                             <div class="md:text-center text-right">FUTURE</div>
                             <div class="md:text-center text-left">VALUE</div>
                         </div>
 
                         <div>
-                            <input type="number" id="small-input" class="block w-full p-2  rounded-md  sm:text-xs text-right">
+                            <input type="number" id="small-input" class="block w-full p-2  rounded-md  mt-2  sm:text-xs text-right" placeholder="1,000.00">
                         </div>
                     </div>
                 </div>
@@ -215,18 +215,18 @@
         </div>
         <div class="flex">
             <div class="w-3/4  mx-auto">
-                <div class="mt-3 text-white md:text-left text-center">
+                <div class="mt-6 text-white md:text-left text-center">
                     <div>
                         STAKING DURATION
                     </div>
                     <div class="grid grid-cols-8 md:gap-0 gap-3">
                         <div class="md:col-span-6 col-span-8 lg:mt-0 mt-2 flex">
-                            <input type="range" class="m-auto cursor-pointer input-range" value="260" min="0" max="365" oninput="rangevalue.value=value" />
+                            <input type="range" class="my-auto mr-auto cursor-pointer input-range" value="85" min="0" max="120" oninput="rangevalue.value=value" />
                         </div>
                         <div class="md:col-span-2  col-span-8 grid grid-cols-3 lg:mt-0 mt-2 ">
                             <div class="col-span-2 flex">
                                 <button class="bg-[#C4C4C4] md:w-3/4 w-full  py-2 rounded-md m-auto text-black">
-                                    <output id="rangevalue">260</output>
+                                    <output id="rangevalue">85</output>
                                 </button>
                             </div>
                             <div class="flex">

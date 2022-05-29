@@ -22,7 +22,7 @@
         font-family: 'myFirstFont' !important;
     }
     
-    .main-page {
+    body {
         background-image: url('image/bg-roadmap.png');
         background-position: bottom;
         height: 100vh;
@@ -119,21 +119,10 @@
         -moz-box-shadow: 0 0 3px #7DCFD4 !important;
         -webkit-box-shadow: 0 0 3px #7DCFD4 !important;
     }
-    
-    html,
-    body {
-        /* display: none; */
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-        margin: 0;
-        height: 100%;
-        overflow: hidden
-        /* Firefox */
-    }
 </style>
 
 <body>
-    <div class="main-page">
+    <div>
         <nav class=" border-gray-200 mx-2 sm:px-4 py-3 ">
             <div class="flex flex-wrap justify-between items-center mx-auto">
                 <a href="index.html" class="flex items-center">
@@ -174,7 +163,14 @@
                 </div>
             </div>
         </nav>
-        <div class="flex mt-10">
+        <div class="flex md:mt-10">
+            <div class="w-3/4 mx-auto border border-[#7DCFD4] border-4 rounded-md px-4">
+                <div class="text-center text-white my-2">
+                    <h1>account</h1>
+                </div>
+            </div>
+        </div>
+        <div class="flex mt-3">
             <div class="w-3/4 mx-auto border border-[#7DCFD4] border-4 rounded-md px-4">
                 <div class="grid grid-cols-3 mt-6">
                     <div class="flex text-white md:col-span-1 col-span-3">
@@ -226,7 +222,7 @@
         </div>
         <div class="flex">
             <div class="w-3/4  mx-auto">
-                <div class="mt-6 text-white md:text-left text-center">
+                <div class="my-6 text-white md:text-left text-center">
                     <div>
                         STAKING DURATION
                     </div>
